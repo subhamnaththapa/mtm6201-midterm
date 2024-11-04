@@ -1,0 +1,142 @@
+<!-- This is my About Us html file for the midterm assignment - MTM6201_010 - Web Development II -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>  
+
+    <!-- Inserting my own individual Font Awesome kit's code here -->
+    <script src="https://kit.fontawesome.com/6f25edf4fd.js" crossorigin="anonymous"></script>
+    
+    <link href="css/styles.css" rel="stylesheet">
+
+    <title>Midterm Project</title>
+
+  </head>
+
+  <body> 
+    <div class="wrap">
+
+    <ul class="skip-links">
+      <li><a href="#main-nav">Skip to Main Navigation</a></li>
+      <li><a href="#welcome-content">Skip to Welcome to Flavours Content</a></li>
+      <li><a href="#weekly-flavours">Skip to Flavours of the Week Content</a></li>
+      <li><a href="#newsletter-signup">Skip to Our Newsletter Subscription Form</a></li>
+      <li><a href="#location-info">Skip to Our Ottawa Location Info</a></li>
+    </ul>
+
+    <div class="container" id="top">  <!--  Note: Start of "container" section  -->
+
+
+    <!-- =============== Header Section =============== -->
+    <header class="site-header">
+
+        <!-- Top Navigation Content -->
+        <nav class="main-nav" id="main-nav">
+          <ul role="menubar">
+            <li><a role="menuitem" href="./index.html" aria-label="Home Nav Button" aria-current="true" class="is-active">HOME</a></li>
+            <li><a role="menuitem" href="#top" aria-label="Our Flavours Nav Button">OUR FLAVOURS</a></li>
+            <li><a role="menuitem" href="./about_us.html" aria-label="About Us Nav Button">ABOUT US</a></li>
+            <li><a role="menuitem" href="#top" aria-label="Order Online Nav Button">ORDER ONLINE</a></li>
+            <li><a role="menuitem" href="#top" aria-label="Catering FAQ Nav Button">CATERING FAQ</a></li>
+            <li><a role="menuitem" href="./contact_us.html" aria-label="Contact Us Nav Button">CONTACT US</a></li>
+            <li><a role="menuitem" href="#top" aria-label="Mood and Ice Cream Pairing Guide Nav Button">MOOD AND ICE CREAM PAIRING GUIDE</a></li>
+            <li><a role="menuitem" href="#top" aria-label="Language Switch to French Nav Button" id="white">FR</a></li>
+            <li><a role="menuitem" href="#top" aria-label="Search Icon Nav Button"><i class="far fa-search"></i></a></li>
+            <li><a role="menuitem" href="#top" aria-label="Map Info Nav Button"><i class="far fa-map-marker-alt"></i></a></li>
+            <li><a role="menuitem" href="#top" aria-label="Shopping Cart Icon Nav Button"><i class="far fa-shopping-cart"></i></a></li>
+          </ul>
+        </nav>
+
+    </header> <!-- End of Header Section -->
+
+
+    <!-- =============== Main Section =============== -->
+    <main class="main-content" id="main-content">
+        <div class="about-us-container">
+
+          <div id="welcome-pad" class="welcome-content-container">
+            <img src="images/Flavours_Logo.svg" alt="Flavours Ice Cream Company Logo" width="150" height="150" class="animation-logo">
+                <blockquote>&quot;A flavour for every mood... Offering delicious ice cream to match your family members' varying moods and unique personalities.&quot;</blockquote>
+        </div>  <!--  Closing of welcome-content container  -->
+         
+          <!-- =============== About Us Section =============== -->
+          <section id="about-section" class="section-about-us">
+        
+            <div class="Container AboutUsWrapper"> 
+                
+                <div class="about-us-content">
+                    <h4>About Us</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint praesentium laboriosam perferendis eius amet ad?
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi corrupti sunt reiciendis soluta quo commodi quidem, non perferendis vel sed facilis rerum cum in exercitationem?</p>
+                </div> <!-- End of text-container -->
+            </div> <!-- End of About Us Wrapper -->
+    
+          </section> <!-- End of About Us section -->
+              
+        </div>  <!--  Closing of about-us-container container  -->
+    </main>
+
+
+    <!-- =============== Footer Section =============== -->
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="logo-copyright">
+                <img src="images/Flavours_Logo.svg" alt="Flavours Ice Cream Company Logo" width="44" height="44" class="animation-logo">
+                <p><a id="screenplay" href="www.screenplaydesigns.com">&copy; Screenplaydesigns 2021</a></p> 
+            </div> <!--  Closing of logo-copyright container  -->
+
+            <div class="footer-font" id="values-nutrition-terms">
+                <ul>
+                    <li><a href="#top">Our Values</a></li>
+                    <li><a href="#top">Nutritionals</a></li>
+                    <li><a href="#top">Terms & Conditions</a></li>
+                </ul>
+            </div> <!--  Closing of values-nutrition-terms container  -->
+
+            <div class="footer-font" id="facebook-twitter-instagram">
+                <ul>
+                    <li><a href="#top"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#top"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#top"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div> <!--  Closing of facebook-twitter-instagram container  -->
+
+            <div class="newsletter-subscription" id="newsletter-signup">
+                <form action="thanks.html">
+                  <label id="subscribe" for="email">Subscribe to our newsletter</label><br>
+                  <input type="email" id="email" placeholder="Email Address">
+                  <button type="submit" value="Submit" aria-label="Submit your email address to subscribe to our newsletter.">OK</button>
+                </form>
+            </div> <!--  Closing of newsletter subscription container  -->
+
+            <div class="footer-font" id="location-info-div">
+
+                <!-- Location Content --> 
+                <address id="location">
+                    <ul role="group" id="location-info" class="address-items" itemscope itemtype="https://schema.org/PostalAddress">
+                        <li itemprop="streetAddress">42 Hinton Ave.</li>
+                        <li itemprop="addressLocality">Ottawa, ON</li>
+                        <li itemprop="postalCode">K1P 0T5</li>
+                        <li itemprop="telephone">613-586-1903</li>
+                        <li itemprop="email"><a aria-label="Create a new email to send to our company" role="button" href=mailto:info@flavoursicecream.ca>info@flavoursicecream.ca</a></li>
+                    </ul>
+                </address>
+            </div> <!--  Closing of values-nutrition-terms container  -->
+
+        </div> <!--  Closing of footer container  -->
+    </footer>
+
+    </div> <!--  Note: Closing DIV from top of body, "container" section  -->
+
+  </div> <!--  Note: Closing DIV from top of body, "wrap" section  -->
+  </body>
+
+</html>
+
+<!-- Comments... I love comments!  LOL  }:-) -->

@@ -1,0 +1,698 @@
+/* This is my main CSS file for the midterm assignment - MTM6201_010 - Web Development II */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ================================================================================== */
+/* ============= Midterm Project ============= */
+/* ================================================================================== */
+
+/* Loading fonts */
+
+@font-face {
+	font-family: 'Arima Madurai';
+	src: url('../fonts/ArimaMadurai-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Bubblegum Sans';
+	src: url('../fonts/BubblegumSans-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Shadows Into Light';
+	src: url('../fonts/ShadowsIntoLight-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'IBM Plex Sans';
+	src: url('../fonts/IBMPlexSans-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'IBM Plex Sans Bold';
+	src: url('../fonts/IBMPlexSans-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'IBM Plex Sans Italic';
+	src: url('../fonts/IBMPlexSans-Italic.ttf');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+/* ********************************************************* */
+/* *************** Mobile Styling Begins Here ************** */
+
+body {
+	background-color: #F0C987;
+}
+
+img {
+	width: 100%;
+}
+
+
+/* CSS code related to the photography credits - Start */
+
+.image-credit-wrapper {
+	overflow: hidden;
+	position: relative;
+}
+	
+.image-credit-wrapper .image-credit {
+	position: absolute;
+	right: 0px;
+	bottom: 4px;
+}
+
+.image-credit {
+	background: rgba(0,0,0,.7);
+	color: #ccc;
+	display: inline-block;
+	font-size: 8px;
+	font-family: helvetica;
+	font-weight: 300;
+	padding: 5px 8px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+/* CSS code related to the photography credits - End */
+
+
+header, footer {
+	background-color: #36013F;
+	margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.welcome-page-container a {
+	color: #FFF;
+}
+
+i, blockquote {
+	color: #FFF;
+	
+}
+
+.picture-frame {
+	border: 1px solid #FFF;
+	border-radius: 0px;
+}
+
+#white {
+	color: #FFF;
+}
+
+blockquote {
+	font-family: 'Bubblegum Sans';
+	width: 90%;
+	line-height: 150%;
+	padding-top: 20px;
+}
+
+h2 {
+	font-family: 'Montserrat';
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+h3 {
+	font-family: 'Montserrat';
+	font-size: 20px;
+	color: #FFF;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+/* CSS code related to the main navigation bar styling - start */
+
+.main-nav ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	flex-direction: column;
+  }
+  
+  .main-nav ul li {
+	flex: 1;
+	text-align: center;
+  }
+  
+  .main-nav ul li a {
+	display: block;
+	color: #32CD32;
+	font-family: 'Arima Madurai';
+	font-size: 12px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+  }
+  /* CSS code related to the main navigation bar styling - end */
+
+
+  /* CSS code related to the footer navigation styling - start */
+
+  .footer-container {
+	  display: flex;
+	  justify-content: space-evenly;
+	  align-items: center;
+	  text-align: center;
+	  align-content: center;
+	  flex-direction: column;
+  }
+
+  .footer-container ul li a {
+	display: block;
+	color: #FFF;
+	font-family: 'IBM Plex Sans';
+	font-size: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+  }
+
+  #screenplay {
+	  color: #F0C987;
+	  font-size: 10px;
+  }
+
+  #subscribe {
+	  color: #FFF;
+	  font-family: 'IBM Plex Sans';
+	  font-weight: bold;
+	  font-size: 10px;
+  }
+
+  #email {
+	  background-color: #36013F;
+	  color: #FFF;
+	  border-color: #FFF;
+	  font-size: 10px;
+  }
+
+  #location-info {
+	  color: #FFF;
+  }
+
+  address {
+	font-size: 10px;
+}
+
+.footer-font, .logo-copyright, .newsletter-subscription {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+  /* CSS code related to the footer navigation styling - end */
+
+
+  /* CSS code related to the skip links styling - start */
+
+  .skip-links{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  .skip-links a{
+	position: absolute;
+	top: -3em;
+	background-color: black;
+	color:white;
+	padding: .5em 1em;
+	font-weight: bold;
+  }
+  
+  .skip-links a:focus{
+	top: 0;
+  }
+  /* CSS code related to the skip links styling - end */
+
+
+  /* CSS code related to the main section sizing and styling - start */
+
+  .welcome-content-container {
+	background-color: #32CD32;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	align-self: center;
+	height: 100%;
+	padding: 20px;
+  }
+
+  .weekly-flavour-one-container{
+	color: #32CD32;
+	background-color: #137547;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+  }
+
+  .weekly-flavour-two-container {
+	color: #32CD32;
+	background-color: #36013F;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	
+  }
+
+  .weekly-flavour-three-container {
+	color: #F0C987;
+	background-color: #054A29;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+  }
+
+  .welcome-page-container {
+	  background-color: #F0C987;
+	  display: flex;
+	  flex-direction: column;
+  }
+
+  .weekly-flavour-one-container, .weekly-flavour-two-container, .weekly-flavour-three-container {
+	width: 100%;
+	height: 100%;
+	align-self: center;
+	text-align: center;
+}
+/* CSS code related to the main section sizing and styling - start */
+
+
+  /* CSS code related to the logo and hyperlink animations - start */
+
+  .animation-logo {
+  		animation-name: rotate;
+  		transition: width 2s, height 2s, transform 2s;
+  		transform: scale(1.0) rotate(0deg);
+  		animation-duration: 0.5s;
+  		animation-delay: 0s;
+  }
+
+  .animation-logo:hover {
+		transform: scale(1.2);
+  		transition: 0.5s;
+	}
+
+  .animation-logo:active {
+		transform-origin: top right;
+		transform: rotate(180deg) translate(-30px) rotate(180deg) rotateY(180deg) scale(0.25);
+		opacity: 0;
+		transition: 1s;
+}
+
+a:hover, button:hover {
+	background-color: #137547;
+	border: 1px solid #32CD32;
+  }
+
+  a:hover, button:hover .animation-logo {
+		animation-name: rotate;
+  		transition: width 2s, height 2s, transform 2s;
+  		transform: scale(1.0) rotate(0deg);
+  		animation-duration: 0.5s;
+  		animation-delay: 0s;
+  }
+  
+  a:active, button:active {
+	color:  white;
+	background-color: #054A29;
+  }
+  
+  .main-nav li:active {
+	color:  white;
+	background-color: #054A29;
+  }
+
+  @keyframes rotate {
+	from {
+	  transform: rotateY(0deg);
+	}
+  
+	to {
+	  transform: rotateY(360deg);
+	}
+  }
+  /* CSS code related to the logo animation - end */
+
+
+/* *************** Mobile Styling Ends Here *************** */
+/* ******************************************************** */
+
+
+/* ---------------------------------------------------------------------------------- */
+
+
+/* ********************************************************** */
+/* *************** Tablet Styling Begins Here *************** */
+
+@media screen and (min-width: 600px) {
+
+	.welcome-page-container {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.welcome-content-container {
+		width: 100%;
+	}
+
+	.weekly-flavour-one-container, .weekly-flavour-two-container, .weekly-flavour-three-container {
+		width: 100%;
+		height: 100%;
+		align-self: center;
+	}
+
+	header, footer {
+		width: 100%;
+	}
+
+	.main-nav ul {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.footer-container {
+		flex-direction: row;
+	}
+
+} /* Tablet media screen bracket ends here */
+
+/* **************** Tablet Styling Ends Here **************** */
+/* ********************************************************** */
+
+
+/* ---------------------------------------------------------------------------------- */
+
+
+/* ********************************************************** */
+/* *************** Desktop Styling Begins Here *************** */
+
+@media screen and (min-width: 992px) {
+
+	.welcome-page-container {
+		width: 100%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-rows: repeat(6, 100px);
+  		grid-template-columns: repeat(20, 1fr);
+	}
+
+	.welcome-content-container {
+		grid-column: 1 / span 4;
+		grid-row: 1 / span 6;
+
+		display: flex;
+		flex-direction: column;
+		padding: 0px;
+	}
+
+	.weekly-flavour-one-container {
+		grid-column: 6 / span 4;
+		grid-row: 2 / span 4;
+		
+		border: 1px solid #000;
+		border-radius: 0px;
+		padding: 0px;
+		display: flex;
+		flex-direction: column;
+	  }
+
+	  .weekly-flavour-two-container {
+		grid-column: 11 / span 4;
+		grid-row: 2 / span 4;
+		
+		border: 1px solid #000;
+		border-radius: 0px;
+		padding: 0px;
+		display: flex;
+		flex-direction: column;
+		
+	  }
+
+	  .weekly-flavour-three-container {
+		grid-column: 16 / span 4;
+		grid-row: 2 / span 4;
+
+		border: 1px solid #000;
+		border-radius: 0px;
+		padding: 0px;
+		display: flex;
+		flex-direction: column;
+	  }
+
+
+} /* Desktop media screen bracket ends here */
+
+/* **************** Desktop Styling Ends Here **************** */
+/* ********************************************************** */
+
+
+/* ---------------------------------------------------------------------------------- */
+
+
+/* ******************************************************************** */
+/* *************** Extended Desktop Styling Begins Here *************** */
+
+@media screen and (min-width: 1920px) {
+
+	.welcome-page-container, .contact-us-container, .about-us-container {
+		width: 1920px;
+		margin: 0 auto;
+	}
+
+	.contact-us-container, .about-us-container {
+		width: 100%;
+	}
+	
+	header, footer {
+		width: 1920px;
+	}
+
+	.picture-one {
+		width: 150px;
+	}
+
+	.picture-two {
+		width: 300px;
+	}
+
+	.picture-three {
+		width: 300px;
+	}
+
+} /* Extended Desktop media screen bracket ends here */
+
+
+/* ******************************************************************** */
+/* **************** Extended Desktop Styling Ends Here **************** */
+
+
+/* CSS code related to contact_us.html - start */
+
+.contact-us-container form input,
+form textarea {
+  	display: block;
+  	width: 90%;
+  	margin-bottom: 1rem;
+  	padding: .5rem 1rem;
+  	color: #FFF;
+	font-family: 'IBM Plex Sans';
+}
+
+.contact-us-container form textarea {
+  	min-height: 100px;
+  	max-height: 100px;
+  	height: 100px;
+  	resize: none;
+  	color: #FFF;
+	font-family: 'IBM Plex Sans';
+}
+
+.contact-us-container form button {
+  	background: none;
+  	background-color: #137547;
+  	border: 3px solid black;
+  	padding: 1rem;
+  	text-transform: uppercase;
+  	color: #FFF;
+	font-family: 'IBM Plex Sans';
+}
+
+.contact-us-container form {
+	border-style: solid;
+  	border-width: 1px;
+  	border-color: black;
+	margin: 5px;
+	padding: 10px;
+	padding-top: 15px;
+	color: #FFF;
+	font-family: 'IBM Plex Sans';
+ }
+
+ .form-flexbox{
+	display: flex;
+	justify-content: space-evenly;
+  }
+  
+  .owner {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+  }
+  
+  .owner h4 {
+	align-self: flex-start;
+  }
+  
+  .google-maps-element {
+	padding-left: 5%;
+  }
+  
+  .owner-contact-items a {
+	color: #FFF;
+  }
+
+  .main-content-contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	color: #FFF;
+	font-family: 'IBM Plex Sans';
+	line-height: 150%;
+  }
+  
+  .main-content-contact h2, p {
+	padding: 5px;
+	align-self: center;
+	justify-self: center;
+	color: #FFF;
+	font-family: 'IBM Plex Sans';
+	line-height: 150%;
+  }
+
+
+@media screen and (min-width: 835px) {
+  .grid-container {
+    display: grid;
+    width: 100%;
+    align-self: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1em;
+  }
+}
+
+  h4 {
+	font-family: 'Bubblegum Sans';
+	font-size: 24px;
+	color: #F0C987;
+	padding-top: 20px;
+	padding-bottom: 20px;
+  }
+
+  .grid-container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 1rem;
+	background-color:#32CD32;
+  }
+
+  .contact-us-container address {
+	font-size: 14px;
+	line-height: 150%;
+}
+
+.contact-section {
+	color: #FFF;
+	font-family: 'IBM Plex Sans';
+	line-height: 150%;
+}
+/* CSS code related to contact_us.html - end */
+
+
+/* CSS code related to about_us.html - start */
+
+.about-us-content {
+	text-align: center;
+	padding: 40px;
+	background-color: #054A29;
+}
+
+.about-us-content p {
+	font-family: 'Shadows Into Light';
+	line-height: 200%;
+	color: #FFF;
+	font-size: 20px;
+}
+
+#welcome-pad {
+	padding: 20px;
+}
+/* CSS code related to about_us.html - end */
+
+
+
+/*  Comments... I love comments!  LOL  }:-)  */
